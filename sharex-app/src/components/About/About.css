@@ -1,0 +1,144 @@
+.about-page {
+    width: 100%;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+  }
+  
+  .about-bigdiv {
+    background-color: white;
+    margin-top: 165px;
+    margin-bottom: 65px;
+    padding: 50px;
+    width: 80%;
+    box-shadow: 5px 5px 20px rgba(116, 118, 118, 0.164);
+  }
+  
+  .about-intro strong {
+    color: #ff7d00;
+  }
+  
+  .about-intro article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .about-intro h2 {
+    text-align: start;
+  }
+  
+  .about-intro img {
+    width: 40%;
+    border-radius: 20px;
+  }
+  
+  .about-mission {
+    /* width: 60%; */
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .about-mission h3 {
+    color: #ff7d00;
+  }
+  
+  .about-mission article {
+    width: 70%;
+    display: flex;
+    /* justify-content: space-between; */
+    text-align: justify;
+  }
+  
+  .about-mission img {
+    width: 40%;
+    border-radius: 20px;
+    margin-right: 30px;
+  }
+  
+  .about-apart {
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .about-apart h3 {
+    color: #ff7d00;
+  }
+  
+  .about-apart img {
+    width: 40%;
+    border-radius: 20px;
+    margin-left: 30px;
+  }
+  
+  .about-apart article {
+    width: 70%;
+    display: flex;
+    /* justify-content: space-between; */
+    text-align: start;
+    line-height: 20px;
+  }
+  
+  .about-apart li {
+    margin-top: 5px;
+  }
+  
+  .about-apart strong {
+    color: #ff7d00;
+  }
+  
+  .about-work {
+    text-align: left;
+    width: 90%;
+  }
+  
+  .about-work h3 {
+    color: #ff7d00;
+  }
+  
+  .about-work strong {
+    color: #ff7d00;
+  }
+  
+  .about-joinus {
+    margin-top: 70px;
+    margin-left: 150px;
+    width: 70%;
+  }
+  
+  .about-joinus p {
+    padding: 15px;
+    border: #ff7d00 solid 2px;
+    border-radius: 20px;
+  }
+  
+  .about-joinus h1 {
+    color: #ff7d00;
+    margin-bottom: -20px;
+  }
+  
+  .about-ty strong {
+    color: #ff7d00;
+  }
+  
+  .about-ty h2 {
+    margin-top: 100px;
+    text-align: justify;
+  }
+  .para-text {
+    color: black;
+    font-size: large;
+  }
+  .welcome-text {
+    color: black;
+    font-size:x-large;
+  }
+  .thanks-text {
+    color: black;
+    font-size:x-large;
+    text-align: center;
+  }
