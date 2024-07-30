@@ -39,4 +39,4 @@
 
 ### Slides
 
-[Slides Link](https://docs.google.com/presentation/d/1Y7HbLG59RKDLyEt0P1JA1KM54twy6vZCqwmtyZlJjcI/edit#slide=id.g2993f433843_0_67)
+[Slides Link](https://docs.google.com/presentation/d/1Y7HbLG59RKDLyEt0P1JA1KM54twy6vZCqwmtyZlJjcI/edit#slide=id.g2993f433843_0_67).
