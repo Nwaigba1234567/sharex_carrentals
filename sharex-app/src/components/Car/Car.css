@@ -1,0 +1,37 @@
+.main-title{
+    color:red;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.form {
+    justify-content: left;
+}
+.lower-nav {
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+
+.lower-nav select {
+    width: 200px;
+    height: 40px;   
+}
+.car-page {
+   color: black; 
+}
+.dashboard {
+    align-content: center;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+  }
+.car-info {
+    color: darkred;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.middle-text {
+    color: black;
+    font-size: 26px;
+    font-family: Arial, Helvetica, sans-serif;
+}

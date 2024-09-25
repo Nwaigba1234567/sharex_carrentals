@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import NavBar from "../NavBar/NavBar";
 import { AuthContext } from "../../Context/AuthContext";
 
-// const API_URL = import.meta.env.VITE_API_URL || "http://localhost:3000"
+const API_URL = import.meta.env.VITE_API_URL || "http://localhost:3000"
 
 export const Login = () => {
     const [email, setEmail] = useState("");
@@ -13,15 +13,18 @@ export const Login = () => {
     const [password, setPassword] = useState("");
     const [error, setError] = useState(null);
     const { authenticateUser } = useContext(AuthContext);
-    const nav = useNavigate();
+    const navigate = useNavigate();
   
     // Handle form submission
     const handleLogin = async (event) => {
         event.preventDefault();
+        setError(null);
+
+
 
         const userLogin = { email, userName, password };
         try {
-            const response = await axios.post("http://localhost:3000/auth/login", userLogin);
+            const response = await axios.post(`${API_URL}/auth/login`, userLogin);
             console.log("You are logged in", response.data);
 
             // Store the authToken from the server in local storage if login is successful
@@ -29,7 +32,7 @@ export const Login = () => {
 
             // Authenticate user and navigate to the home page
             await authenticateUser();
-            nav('/home'); 
+            navigate('/car'); 
         } catch (err) {
             console.log("Error occurred while signing up", err);
             setError(err);

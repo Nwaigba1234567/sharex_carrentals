@@ -1,8 +1,6 @@
 import axios from "axios";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import NavBar from "../NavBar/NavBar";
-
 
 
 
@@ -22,21 +20,21 @@ export const Signup = () => {
     const nav = useNavigate();
 
 
-
      //this is the onSubmit function
 
-    const handleSignup = async (event) => {
-        event.preventDefault();
+    const handleSignup = async (e) => {
+        e.preventDefault();
 
         const formData = new FormData();
-        const image = event.target.image.files[0];
+        // const image = e.target.imageUrl.files[0];
         formData.append("title", title);
         formData.append("firstName", firstName);
         formData.append("lastName", lastName);
         formData.append("userName", userName);
         formData.append("email", email);
         formData.append("password", password);
-        formData.append("imageUrl", image);
+        // formData.append("imageUrl", image);
+        
 
         const newUser = {title, firstName, lastName, userName, email, password }
 
@@ -51,7 +49,12 @@ export const Signup = () => {
 
         // const userToCreate = { userName, email, password };
         try {
-            const response = await axios.post("http://localhost:3000/auth/signup", formData, newUser);
+            const response = await axios.post("http://localhost:3000/auth/signup", formData,  {
+                headers: {
+                    'Content-Type': 'multipart/form-data'
+                }
+            });
+            
             console.log("You created a user", response.data);
             
             //this code allows new users navigate to the login page after creating a user account
@@ -59,7 +62,7 @@ export const Signup = () => {
 
         } catch(err) {
             console.log("you've experienced an error signing up", err);
-            setError(err.response.data.errorMessage);
+            setError(err);
         }   
     };
 
@@ -116,18 +119,18 @@ export const Signup = () => {
                     </div>
 
                     <div className="form-group">  
-                                <label>
+                                <label for="password">
                                 Password:
                                 </label>
-                                <input type="password" placeholder="Password" value={password} onChange={(event) => setPassword(event.target.value)} required
+                                <input id="password" type="password" placeholder="password" autoComplete="current-password" value={password} onChange={(event) => setPassword(event.target.value)} required
                                 />
                     </div>
-                    <div className="form-group"> 
+                    {/* <div className="form-group"> 
                                 <label>
                                 ProfileImage:
                                 </label>
                                 <input type="file" name="image" />
-                    </div>
+                    </div> */}
                                 <button className="btn">Sign Up</button>
                                 </form>
                                 {error ? <h4 className="error-message">{error}</h4> : null}

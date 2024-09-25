@@ -1,8 +1,9 @@
 .nav-container {
+  top: 0;
     right: 0px;
     background-color: rgba(47, 20, 166, 0.901);
-    /* position: fixed; */
-    bottom: 0;
+    position: fixed;
+    width: 1500px;
     display: flex;
     justify-content: center;
     align-items: center;

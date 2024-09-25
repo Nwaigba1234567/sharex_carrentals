@@ -1,0 +1,21 @@
+.car-detail {
+    color: black;   
+ }
+ .review-text {
+    color: black;
+ }
+
+ #comment {
+   width: 1000px;
+   height: 100px;
+ margin-left: 20px;
+ }
+ .form-group {
+   margin-left: 10px;
+ }
+ .second-text{
+  color: crimson;
+ }
+ .star-rating{
+  margin-right: 0%;
+ }

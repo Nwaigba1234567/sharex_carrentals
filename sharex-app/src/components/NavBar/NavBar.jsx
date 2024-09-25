@@ -26,7 +26,7 @@ const NavBar = () => {
   return (
     <div className="nav-container">
      
-      <button onClick={() => nav("/home")}>Cars</button>
+      <button onClick={() => nav("/car")}>Cars</button>
       <button onClick={() => nav("/about")}>About Us</button>
       <button onClick={handleLogout}>Log out</button>
       <button onClick={handleLogin}>Log In</button>
