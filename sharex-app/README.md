@@ -37,7 +37,7 @@
 
 [Fronted Repository Link](https://github.com/Nwaigba1234567/sharex_carrentals.git)]
 
-[Backend Repository Link]((https://github.com/Nwaigba1234567/sharex_backend.git))
+[Backend Repository Link](https://github.com/Nwaigba1234567/sharex_backend.git)]
 
 
 ### Slides
