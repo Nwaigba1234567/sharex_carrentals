@@ -1,8 +1,44 @@
-# React + Vite
+# # ShareX Car Rental
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## [See the Website!]()
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Description
+
+**Main idea-** ShareX Rentals is a web application that will connect people to rent cars and to see the prices of the cars. Users can also leave a review.
+
+## User Stories
+
+**NOTE -** On the webiste you'll be able to:
+
+- **Dashboard** - Display all the cars available to rent.
+- **Filter** - You can filter the cars display by brands, type and seats. You can even type by their name !
+- **Sign up** - If you're new here, you can sign in to our website.
+- **Login** - After signup and create new account you can login here
+- **About Page** - All you have to know about our shelters and what is done here to help the pets in needs.
+
+## Backlog Functionalities
+
+**Responsive design** to be able to rent a car even on smartphones and desktops.
+
+## Technologies used
+
+**Frontend end** : React Js + vite + CSS + Axios.
+**Backend** : MongoDB, RestAPI, Node.js.
+
+## Links
+
+## Solo Collaborator
+
+[Kate Nwaigba](https://github.com/Nwaigba1234567)
+
+### Project
+
+[Fronted Repository Link](https://github.com/Nwaigba1234567/sharex_carrentals.git)]
+
+[Backend Repository Link]((https://github.com/Nwaigba1234567/sharex_backend.git))
+
+
+### Slides
+
