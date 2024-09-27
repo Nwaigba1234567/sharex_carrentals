@@ -137,28 +137,55 @@ const CarDetail = () => {
   return (
     <div>
       <div className="car-detail">
+      <h1>Hello I'm {car.name} !</h1>
         <img src={car.imageUrl} alt={car.name} width={400} height={400} />
-        <p>Name: {car.name}</p>
-        <p>Doors: {car.doors}</p>
-        <p>Type: {car.type}</p>
-        <p>Seat: {car.seat}</p>
-        <p>Available Units: {car.availableUnits}</p>
-        <p>Price: {car.price}</p>
-        <p>Rating: {[...Array(Math.round(car.ratings))].map((_, i) => '⭐').join('')} ({car.ratings.toFixed(1)})</p>
+        <div className="car-table">
+          <h3>My informations</h3>
+        <table className="car-info">
+        <tbody>
+        <tr>
+          <th>Name</th>
+          <td>{car.name}</td>
+          <th>Doors</th>
+          <td>{car.doors}</td>
+        </tr>
+
+        <tr>
+          <th>Type</th>
+          <td>{car.type}</td>
+          <th>Seat</th>
+          <td>{car.seat}</td>
+        </tr>
+
+        <tr>
+          <th>Available Units</th>
+          <td>{car.availableUnits}</td>
+          <th>Price</th>
+          <td>{car.price}</td>
+        </tr>
+
+        <tr>
+        <th>Rating: {[...Array(Math.round(car.ratings))].map((_, i) => '⭐').join('')} ({car.ratings.toFixed(1)})</th>
+        </tr>
+        </tbody>
+        </table>
+        </div>
+      
+       
       </div>
 
       <div className="reviews-container">
-        <h2>Reviews</h2>
+       
         {car.reviews && car.reviews.length > 0 ? (
           car.reviews.map((review, index) => (
             <div key={index} className="review">
-              <p>Rating: {[...Array(review.rating)].map((_, i) => '⭐').join('')}</p>
+              <p className="rate">Rating: {[...Array(review.rating)].map((_, i) => '⭐').join('')}</p>
               <p>Comment: {review.comment}</p>
               <p>By: {review.name}</p>
             </div>
           ))
         ) : (
-          <p>No reviews yet.</p>
+          <p className="no-review">No reviews yet.</p>
         )}
       </div>
 
@@ -192,15 +219,17 @@ const CarDetail = () => {
               required
             />
           </div>
-          <button type="submit" className="submit-btn">Submit Review</button>
+          
+          <div className="three-btn">
+          <button type="submit" >Submit Review</button>
+        <button onClick={handleDelete} >Delete car information</button>
+        <button onClick={handleBack}>Return home</button>
+      </div>
         </form>
         {reviewError && <p className="error-message">{reviewError}</p>}
       </div>
 
-      <div className="end-page-btn">
-        <button onClick={handleDelete}>Delete car information</button>
-        <button onClick={handleBack}>Return home</button>
-      </div>
+     
     </div>
   );
 };

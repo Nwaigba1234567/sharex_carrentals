@@ -26,10 +26,10 @@ const NavBar = () => {
   return (
     <div className="nav-container">
      
-      <button onClick={() => nav("/car")}>Cars</button>
-      <button onClick={() => nav("/about")}>About Us</button>
-      <button onClick={handleLogout}>Log out</button>
-      <button onClick={handleLogin}>Log In</button>
+      <button onClick={() => nav("/car")} className="button">Cars</button>
+      <button onClick={() => nav("/about")} className="button">About Us</button>
+      <button onClick={handleLogout} className="button">Log out</button>
+      <button onClick={handleLogin} className="button">Log In</button>
     </div>
   )
 }
